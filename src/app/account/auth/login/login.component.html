@@ -7,8 +7,8 @@
       <div class="col-lg-12">
           <div class="text-center">
               <a href="/" class="mb-5 d-block auth-logo">
-                  <img src="assets/images/logo-dark.png" alt="" height="22" class="logo logo-dark">
-                  <img src="assets/images/logo-light.png" alt="" height="22" class="logo logo-light">
+                  <img src="assets/images/logo.png" alt="" height="42" class="logo logo-dark">
+                  
               </a>
           </div>
       </div>
@@ -19,8 +19,8 @@
 
           <div class="card-body p-4"> 
             <div class="text-center mt-2">
-                <h5 class="text-primary">Welcome Back !</h5>
-                <p class="text-muted">Sign in to continue to Minible.</p>
+                <h4 class="text-primary">Practice Management Software</h4>
+                <p class="text-muted">Sign in to continue.</p>
             </div>
             <div class="p-2 mt-4">
               <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
@@ -28,12 +28,11 @@
                 <ngb-alert type="danger" *ngIf="error" [dismissible]="false">{{ error }}</ngb-alert>
 
                 <div class="mb-3">
-                  <label for="email">Username</label>
-                  <input type="email" formControlName="email" class="form-control" id="email" placeholder="Email"
-                  [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
-                  <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
-                    <div *ngIf="f.email.errors.required">Email is required</div>
-                    <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                  <label for="text">Username</label>
+                  <input type="text" formControlName="username" class="form-control" id="username" placeholder="Username"
+                  [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
+                  <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                    <div *ngIf="f.username.errors.required">Username is required</div>
                   </div>
                 </div>
 
