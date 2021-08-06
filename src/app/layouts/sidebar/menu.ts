@@ -28,12 +28,12 @@ export const MENU: MenuItem[] = [
     {
         id: 6,
         label: 'MENUITEMS.TREATMENT_NOTES.TEXT',
-        icon: 'uil-search',
+        icon: 'uil-edit',
         link: '/calendar',
     },
     {
         id: 7,
-        label: 'MENUITEMS.LAB.TEXT',
+        label: 'MENUITEMS.LAB.TEXT', 
         icon: 'uil-flask',
         link: '/calendar',
     },
@@ -41,13 +41,13 @@ export const MENU: MenuItem[] = [
     {
         id: 8,
         label: 'MENUITEMS.FACILITY.TEXT',
-        icon: 'uil-flask',
+        icon: 'uil-cloud-bookmark',
         link: '/calendar',
     },
     {
         id: 9,
         label: 'MENUITEMS.INSURANCE.TEXT',
-        icon: 'insurance-agency',
+        icon: 'uil-swatchbook',
         link: '/calendar',
     },
   /**   {

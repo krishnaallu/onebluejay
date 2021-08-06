@@ -36,8 +36,8 @@ export class LoginComponent implements OnInit, AfterViewInit {
     document.body.setAttribute('class', 'authentication-bg');
 
     this.loginForm = this.formBuilder.group({
-      email: ['admin@themesbrand.com', [Validators.required, Validators.email]],
-      password: ['123456', [Validators.required]],
+      username: ['admin', [Validators.required]],
+      password: ['admin', [Validators.required]],
     });
 
     // reset login status
@@ -64,7 +64,7 @@ export class LoginComponent implements OnInit, AfterViewInit {
       return;
     } else {
       if (environment.defaultauth === 'firebase') {
-        this.authenticationService.login(this.f.email.value, this.f.password.value).then((res: any) => {
+        this.authenticationService.login(this.f.username.value, this.f.password.value).then((res: any) => {
           document.body.removeAttribute('class');
           this.router.navigate(['/dashboard']);
         })
@@ -72,7 +72,7 @@ export class LoginComponent implements OnInit, AfterViewInit {
             this.error = error ? error : '';
           });
       } else {
-        this.authFackservice.login(this.f.email.value, this.f.password.value)
+        this.authFackservice.login(this.f.username.value, this.f.password.value)
           .pipe(first())
           .subscribe(
             data => {
