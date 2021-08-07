@@ -5,14 +5,14 @@ import { DefaultComponent } from './dashboards/default/default.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { EditorComponent } from './form/editor/editor.component';
 import { AdvancedtableComponent } from './tables/advancedtable/advancedtable.component';
-
+import { ElementsComponent } from './form/elements/elements.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'dashboard' },
   { path: 'dashboard', component: DefaultComponent },
   { path: 'calendar', component: CalendarComponent },
   {path: 'searchPatient', component: AdvancedtableComponent},
-  {path: 'addPatient', component: EditorComponent},
+  {path: 'addPatient', component: ElementsComponent},
   {path: 'addNotes', component: EditorComponent},
   {path: 'diagnosisProcedure', component: AdvancedtableComponent},
   {path: 'facility', component: AdvancedtableComponent},

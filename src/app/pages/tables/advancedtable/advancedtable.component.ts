@@ -39,7 +39,7 @@ export class AdvancedtableComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.breadCrumbItems = [{ label: 'Tables' }, { label: 'Datatables', active: true }];
+    this.breadCrumbItems = [];
     /**
      * fetch data
      */

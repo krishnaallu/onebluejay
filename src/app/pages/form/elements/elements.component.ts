@@ -19,7 +19,7 @@ export class ElementsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.breadCrumbItems = [{ label: 'Forms' }, { label: 'Basic Elements', active: true }];
+    this.breadCrumbItems = [];
     bsCustomFileInput.init();
   }
 }
