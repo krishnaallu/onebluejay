@@ -3,13 +3,23 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { DefaultComponent } from './dashboards/default/default.component';
 import { CalendarComponent } from './calendar/calendar.component';
-import { ChatComponent } from './chat/chat.component';
+import { EditorComponent } from './form/editor/editor.component';
+import { AdvancedtableComponent } from './tables/advancedtable/advancedtable.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: 'dashboard' },
   { path: 'dashboard', component: DefaultComponent },
   { path: 'calendar', component: CalendarComponent },
-  { path: 'chat', component: ChatComponent },
+  {path: 'searchPatient', component: AdvancedtableComponent},
+  {path: 'addPatient', component: EditorComponent},
+  {path: 'addNotes', component: EditorComponent},
+  {path: 'diagnosisProcedure', component: AdvancedtableComponent},
+  {path: 'facility', component: AdvancedtableComponent},
+  {path: 'insurance', component: AdvancedtableComponent},
+  {path: 'billing', component: AdvancedtableComponent},
+  {path: 'analytics', component: AdvancedtableComponent},
+  {path: 'reports', component: AdvancedtableComponent},
   { path: 'dashboards', loadChildren: () => import('./dashboards/dashboards.module').then(m => m.DashboardsModule) },
   { path: 'ecommerce', loadChildren: () => import('./ecommerce/ecommerce.module').then(m => m.EcommerceModule) },
   { path: 'email', loadChildren: () => import('./email/email.module').then(m => m.EmailModule) },

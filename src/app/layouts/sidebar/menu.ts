@@ -11,7 +11,7 @@ export const MENU: MenuItem[] = [
         id: 3,
         label: 'MENUITEMS.ADD_PATIENT.TEXT',
         icon: 'uil-user-plus',
-        link: '/calendar',
+        link: '/addPatient',
     },
     {
         id: 4,
@@ -23,32 +23,32 @@ export const MENU: MenuItem[] = [
         id: 5,
         label: 'MENUITEMS.SEARCH_PATIENT.TEXT',
         icon: 'uil-search',
-        link: '/calendar',
+        link: '/searchPatient',
     },
     {
         id: 6,
         label: 'MENUITEMS.TREATMENT_NOTES.TEXT',
         icon: 'uil-edit',
-        link: '/calendar',
+        link: '/addNotes',
     },
     {
         id: 7,
         label: 'MENUITEMS.LAB.TEXT', 
         icon: 'uil-flask',
-        link: '/calendar',
+        link: '/diagnosisProcedure',
     },
 
     {
         id: 8,
         label: 'MENUITEMS.FACILITY.TEXT',
         icon: 'uil-cloud-bookmark',
-        link: '/calendar',
+        link: '/facility',
     },
     {
         id: 9,
         label: 'MENUITEMS.INSURANCE.TEXT',
         icon: 'uil-swatchbook',
-        link: '/calendar',
+        link: '/insurance',
     },
   /**   {
         id: 5,
@@ -60,7 +60,7 @@ export const MENU: MenuItem[] = [
         id: 10,
         label: 'MENUITEMS.BILLING.TEXT',
         icon: 'bx-money',
-        link: '/calendar',
+        link: '/billing',
     },
   /**   {
         id: 5,
@@ -90,13 +90,13 @@ export const MENU: MenuItem[] = [
         id: 11,
         label: 'MENUITEMS.ANALYTICS.TEXT',
         icon: 'bx-bar-chart-square',
-        link: '/calendar',
+        link: '/analytics',
     },
     {
         id: 12,
         label: 'MENUITEMS.REPORTS.TEXT',
         icon: 'bxs-report',
-        link: '/calendar',
+        link: '/reports',
     },/** 
     {
         id: 6,
