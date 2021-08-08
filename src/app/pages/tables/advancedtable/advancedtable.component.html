@@ -1,13 +1,13 @@
 <div class="container-fluid">
-  <app-page-title title="Datatables" [breadcrumbItems]="breadCrumbItems"></app-page-title>
+  <app-page-title title="" [breadcrumbItems]="breadCrumbItems"></app-page-title>
   <div class="row">
     <div class="col-12">
       <div class="card">
         <div class="card-body">
-          <h4 class="card-title">Default Datatable</h4>
+        <!--  <h4 class="card-title">Default Datatable</h4>
           <p class="card-sub-title">
             Example of datatable.
-          </p>
+          </p>-->
           <div class="row mb-md-2">
             <div class="col-sm-12 col-md-6">
               <div class="dataTables_length" id="tickets-table_length"><label
@@ -35,11 +35,11 @@
               <thead>
                 <tr>
                   <th sortable="name" (sort)="onSort($event)">Name</th>
-                  <th sortable="position" (sort)="onSort($event)">Position</th>
+                  <th sortable="mobilenumber" (sort)="onSort($event)">Mobile Number</th>
                   <th sortable="office" (sort)="onSort($event)">Office</th>
                   <th sortable="age" (sort)="onSort($event)">Age</th>
-                  <th sortable="date" (sort)="onSort($event)">Start date</th>
-                  <th sortable="salary" (sort)="onSort($event)">Salary</th>
+                  <th sortable="dateofbirth" (sort)="onSort($event)">First Appointment Date</th>
+                  <th sortable="salary" (sort)="onSort($event)">Bill Paid</th>
                 </tr>
               </thead>
               <tbody *ngFor="let table of tables$ | async;let i=index">
@@ -49,7 +49,7 @@
                     <ngb-highlight [result]="table.name" [term]="service.searchTerm"></ngb-highlight>
                   </td>
                   <td>
-                    <ngb-highlight [result]="table.position" [term]="service.searchTerm"></ngb-highlight>
+                    <ngb-highlight [result]="table.mobilenumber" [term]="service.searchTerm"></ngb-highlight>
                   </td>
                   <td>
                     <ngb-highlight [result]="table.office" [term]="service.searchTerm"></ngb-highlight>
@@ -58,7 +58,7 @@
                     <ngb-highlight [result]="table.age" [term]="service.searchTerm"></ngb-highlight>
                   </td>
                   <td>
-                    <ngb-highlight [result]="table.date" [term]="service.searchTerm"></ngb-highlight>
+                    <ngb-highlight [result]="table.dateofbirth" [term]="service.searchTerm"></ngb-highlight>
                   </td>
                   <td>
                     <ngb-highlight [result]="table.salary" [term]="service.searchTerm"></ngb-highlight>

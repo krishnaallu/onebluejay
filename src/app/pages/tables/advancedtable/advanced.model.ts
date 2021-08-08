@@ -1,10 +1,11 @@
 // Table data
 export interface Table {
     name: string;
-    mobile: number;
+    mobilenumber: string;
+    office: string;
     age: number;
-    state: string;
     dateofbirth: string;
+    salary: string;
 }
 
 // Search Data
