@@ -6,6 +6,7 @@ import { CalendarComponent } from './calendar/calendar.component';
 import { EditorComponent } from './form/editor/editor.component';
 import { AdvancedtableComponent } from './tables/advancedtable/advancedtable.component';
 import { ElementsComponent } from './form/elements/elements.component';
+//import {DefaultAnalyticsComponent} from './analytics/default/analytics.component'
 
 const routes: Routes = [
   { path: '', redirectTo: 'dashboard' },
