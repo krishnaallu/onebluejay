@@ -31,7 +31,7 @@ export const MENU: MenuItem[] = [
         icon: 'uil-edit',
         link: '/addNotes',
     },
-    {
+  /**   {
         id: 7,
         label: 'MENUITEMS.LAB.TEXT', 
         icon: 'uil-flask',
@@ -43,7 +43,7 @@ export const MENU: MenuItem[] = [
         label: 'MENUITEMS.FACILITY.TEXT',
         icon: 'uil-cloud-bookmark',
         link: '/facility',
-    },
+    },*/
     {
         id: 9,
         label: 'MENUITEMS.INSURANCE.TEXT',

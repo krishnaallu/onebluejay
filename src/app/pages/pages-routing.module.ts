@@ -5,6 +5,8 @@ import { DefaultComponent } from './dashboards/default/default.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { EditorComponent } from './form/editor/editor.component';
 import { AdvancedtableComponent } from './tables/advancedtable/advancedtable.component';
+import { BillingtableComponent } from './tables/billingtable/billingtable.component';
+import { InsurancetableComponent } from './tables/insurancetable/insurancetable.component';
 import { ElementsComponent } from './form/elements/elements.component';
 //import {DefaultAnalyticsComponent} from './analytics/default/analytics.component'
 
@@ -17,8 +19,8 @@ const routes: Routes = [
   {path: 'addNotes', component: EditorComponent},
   {path: 'diagnosisProcedure', component: AdvancedtableComponent},
   {path: 'facility', component: AdvancedtableComponent},
-  {path: 'insurance', component: AdvancedtableComponent},
-  {path: 'billing', component: AdvancedtableComponent},
+  {path: 'insurance', component: InsurancetableComponent},
+  {path: 'billing', component: BillingtableComponent},
   {path: 'analytics', component: AdvancedtableComponent},
   {path: 'reports', component: AdvancedtableComponent},
   { path: 'dashboards', loadChildren: () => import('./dashboards/dashboards.module').then(m => m.DashboardsModule) },

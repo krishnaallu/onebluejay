@@ -9,10 +9,14 @@ import { TablesRoutingModule } from './tables-routing.module';
 import { AdvancedSortableDirective } from './advancedtable/advanced-sortable.directive';
 import { BasicComponent } from './basic/basic.component';
 import { AdvancedtableComponent } from './advancedtable/advancedtable.component';
+import { BillingSortableDirective } from './billingtable/billingtable-sortable.directive';
+import { BillingtableComponent } from './billingtable/billingtable.component';
+import { InsuranceSortableDirective } from './insurancetable/insurancetable-sortable.directive';
+import { InsurancetableComponent } from './insurancetable/insurancetable.component';
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
-  declarations: [BasicComponent, AdvancedtableComponent, AdvancedSortableDirective],
+  declarations: [BasicComponent, AdvancedtableComponent, AdvancedSortableDirective,BillingSortableDirective,BillingtableComponent,InsuranceSortableDirective,InsurancetableComponent],
   imports: [
     CommonModule,
     TablesRoutingModule,
