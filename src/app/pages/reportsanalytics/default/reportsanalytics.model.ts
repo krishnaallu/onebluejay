@@ -1,3 +1,4 @@
+// Chart data
 export interface ChartType {
     chart?: any;
     plotOptions?: any;

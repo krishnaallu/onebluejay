@@ -1,10 +1,10 @@
-import { ChartType } from './dashboard.model';
+import { ChartType } from './report.model';
 
 const transactions = [
     {
         id: '#MB2540',
         name: 'Neal Matthews',
-        date: '07 Oct, 2019',
+        date: '07 Aug, 2021',
         total: '$400',
         status: 'Paid',
         payment: ['fa-cc-mastercard', 'Mastercard'],
@@ -13,7 +13,7 @@ const transactions = [
     {
         id: '#MB2541',
         name: 'Jamal Burnett',
-        date: '07 Oct, 2019',
+        date: '07 Aug, 2021',
         total: '$380',
         status: 'Chargeback',
         payment: ['fa-cc-visa', 'Visa'],
@@ -22,7 +22,7 @@ const transactions = [
     {
         id: '#MB2542',
         name: 'Juan Mitchell',
-        date: '06 Oct, 2019',
+        date: '06 Aug, 2021',
         total: '$384',
         status: 'Paid',
         payment: ['fab fa-cc-paypal', 'Paypal'],
@@ -31,7 +31,7 @@ const transactions = [
     {
         id: '#MB2543',
         name: 'Barry Dick',
-        date: '05 Oct, 2019',
+        date: '05 Aug, 2021',
         total: '$412',
         status: 'Paid',
         payment: ['fa-cc-mastercard', 'Mastercard'],
@@ -40,7 +40,7 @@ const transactions = [
     {
         id: '#MB2544',
         name: 'Ronald Taylor',
-        date: '04 Oct, 2019',
+        date: '04 Aug, 2021',
         total: '$404',
         status: 'Refund',
         payment: ['fa-cc-visa', 'Visa'],
@@ -49,7 +49,7 @@ const transactions = [
     {
         id: '#MB2545',
         name: 'Jacob Hunter',
-        date: '04 Oct, 2019',
+        date: '04 Aug, 2021',
         total: '$392',
         status: 'Paid',
         payment: ['fab fa-cc-paypal', 'Paypal'],

@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { transactions, lineColumAreaChart, revenueColumnChart, customerRadialBarChart, orderRadialBarChart, growthColumnChart} from './data';
 
-import { ChartType } from './analytics.model';
+import { ChartType } from './reportsanalytics.model';
 
 @Component({
-  selector: 'app-default',
-  templateUrl: './analytics.component.html',
-  styleUrls: ['./analytics.component.scss']
+  selector: 'appreportanalytics-default',
+  templateUrl: './reportsanalytics.component.html',
+  styleUrls: ['./reportsanalytics.component.scss']
 })
 
-export class DefaultAnalyticsComponent implements OnInit {
+export class ReportAnalyticsComponent implements OnInit {
 
   lineColumAreaChart: ChartType;
   revenueColumnChart: ChartType;

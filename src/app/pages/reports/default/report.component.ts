@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { transactions, lineColumAreaChart, revenueColumnChart, customerRadialBarChart, orderRadialBarChart, growthColumnChart} from './data';
 
-import { ChartType } from './dashboard.model';
+import { ChartType } from './report.model';
 
 @Component({
-  selector: 'app-default',
-  templateUrl: './default.component.html',
-  styleUrls: ['./default.component.scss']
+  selector: 'appreport-default',
+  templateUrl: './report.component.html',
+  styleUrls: ['./report.component.scss']
 })
 
-export class DefaultComponent implements OnInit {
+export class ReportComponent implements OnInit {
 
   lineColumAreaChart: ChartType;
   revenueColumnChart: ChartType;
@@ -26,7 +26,7 @@ export class DefaultComponent implements OnInit {
      * Fetches the data
      */
     this.fetchData();
-    this.breadCrumbItems = [{ label: 'Minible' }, { label: 'Dashboard', active: true }];
+    this.breadCrumbItems = [{ label: 'Report', active: true }];
   }
 
   /**

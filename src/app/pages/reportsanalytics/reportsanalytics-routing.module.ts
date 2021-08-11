@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { DefaultAnalyticsComponent } from './default/analytics.component';
+import { ReportAnalyticsComponent } from './default/reportsanalytics.component';
 
 const routes: Routes = [
     {
         path: 'default',
-        component: DefaultAnalyticsComponent
+        component: ReportAnalyticsComponent
     },
     {
         path: 'saas',
-        component: DefaultAnalyticsComponent
+        component: ReportAnalyticsComponent
     },
     {
         path: 'crypto',
-        component: DefaultAnalyticsComponent
+        component: ReportAnalyticsComponent
     },
 ];
 
@@ -22,4 +22,4 @@ const routes: Routes = [
     imports: [RouterModule.forChild(routes)],
     exports: [RouterModule]
 })
-export class DashboardsRoutingModule {}
+export class ReportsAnalyticsRoutingModule {}

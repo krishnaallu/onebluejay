@@ -8,7 +8,8 @@ import { AdvancedtableComponent } from './tables/advancedtable/advancedtable.com
 import { BillingtableComponent } from './tables/billingtable/billingtable.component';
 import { InsurancetableComponent } from './tables/insurancetable/insurancetable.component';
 import { ElementsComponent } from './form/elements/elements.component';
-//import {DefaultAnalyticsComponent} from './analytics/default/analytics.component'
+import { ReportComponent } from './reports/default/report.component';
+import { ReportAnalyticsComponent } from './reportsanalytics/default/reportsanalytics.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'dashboard' },
@@ -21,8 +22,8 @@ const routes: Routes = [
   {path: 'facility', component: AdvancedtableComponent},
   {path: 'insurance', component: InsurancetableComponent},
   {path: 'billing', component: BillingtableComponent},
-  {path: 'analytics', component: AdvancedtableComponent},
-  {path: 'reports', component: AdvancedtableComponent},
+  {path: 'analytics', component: ReportAnalyticsComponent},
+  {path: 'reports', component: ReportComponent},
   { path: 'dashboards', loadChildren: () => import('./dashboards/dashboards.module').then(m => m.DashboardsModule) },
   { path: 'ecommerce', loadChildren: () => import('./ecommerce/ecommerce.module').then(m => m.EcommerceModule) },
   { path: 'email', loadChildren: () => import('./email/email.module').then(m => m.EmailModule) },

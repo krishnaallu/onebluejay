@@ -3,22 +3,22 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UIModule } from '../../shared/ui/ui.module';
 
-import { DashboardsRoutingModule } from './analyticsdashboards-routing.module';
+import { ReportsAnalyticsRoutingModule } from './reportsanalytics-routing.module';
 
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { NgbDropdownModule, NgbTooltipModule, NgbNavModule } from '@ng-bootstrap/ng-bootstrap'
 
 import { SimplebarAngularModule } from 'simplebar-angular';
 
-import { DefaultAnalyticsComponent } from './default/analytics.component';
+import { ReportAnalyticsComponent } from './default/reportsanalytics.component';
 
 @NgModule({
-  declarations: [DefaultAnalyticsComponent],
+  declarations: [ReportAnalyticsComponent],
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    DashboardsRoutingModule,
+    ReportsAnalyticsRoutingModule,
     NgbDropdownModule,
     NgbTooltipModule,
     NgbNavModule,
@@ -27,4 +27,4 @@ import { DefaultAnalyticsComponent } from './default/analytics.component';
     UIModule
   ],
 })
-export class DashboardsModule { }
+export class ReportsAnalyticsModule { }

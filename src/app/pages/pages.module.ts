@@ -20,6 +20,8 @@ import { UIModule } from '../shared/ui/ui.module';
 import { PagesRoutingModule } from './pages-routing.module';
 
 import { DashboardsModule } from './dashboards/dashboards.module';
+import { ReportsModule } from './reports/reports.module';
+import { ReportsAnalyticsModule } from './reportsanalytics/reportsanalytics.module';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { LoaderService } from '../core/services/loader.service';
@@ -49,6 +51,8 @@ FullCalendarModule.registerPlugins([
     NgApexchartsModule,
     ReactiveFormsModule,
     DashboardsModule,
+    ReportsModule,
+    ReportsAnalyticsModule,
     HttpClientModule,
     FullCalendarModule,
     NgbNavModule,

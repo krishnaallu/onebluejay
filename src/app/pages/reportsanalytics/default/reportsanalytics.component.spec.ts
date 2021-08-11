@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { DefaultAnalyticsComponent } from './analytics.component';
+import { ReportAnalyticsComponent } from './reportsanalytics.component';
 
 describe('DefaultComponent', () => {
-  let component: DefaultAnalyticsComponent;
-  let fixture: ComponentFixture<DefaultAnalyticsComponent>;
+  let component: ReportAnalyticsComponent;
+  let fixture: ComponentFixture<ReportAnalyticsComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ DefaultAnalyticsComponent ]
+      declarations: [ ReportAnalyticsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DefaultAnalyticsComponent);
+    fixture = TestBed.createComponent(ReportAnalyticsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
